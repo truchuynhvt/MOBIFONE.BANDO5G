@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa61b9ddd438ee160af5f65bc38181bb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa61b9ddd438ee160af5f65bc38181bb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa61b9ddd438ee160af5f65bc38181bb = L.map(
+                "map_aa61b9ddd438ee160af5f65bc38181bb",
+                {
+                    center: [10.391737666666666, 107.11005628888888],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee691f2944984ac0003c33cdbd17d27d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa61b9ddd438ee160af5f65bc38181bb);
+        
+    
+            var marker_cluster_79ae3586bb0f490507fcc609640de543 = L.markerClusterGroup(
+                {}
+            );
+            map_aa61b9ddd438ee160af5f65bc38181bb.addLayer(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var marker_47d4288dde2ee990ba6bc61877e35bbc = L.marker(
+                [10.49926, 107.16834],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_c2e7fd611e3b9a1b94cba0002ea48ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_47d4288dde2ee990ba6bc61877e35bbc.setIcon(icon_c2e7fd611e3b9a1b94cba0002ea48ba0);
+        
+    
+        var popup_6db5ae4ae41a63bf6f7594d729965e88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e846763c065a634e3bfdbf40367b6c74 = $(`<div id="html_e846763c065a634e3bfdbf40367b6c74" style="width: 100.0%; height: 100.0%;">VUBR00 - Phước Nguyên, Bà Rịa</div>`)[0];
+            popup_6db5ae4ae41a63bf6f7594d729965e88.setContent(html_e846763c065a634e3bfdbf40367b6c74);
+        
+
+        marker_47d4288dde2ee990ba6bc61877e35bbc.bindPopup(popup_6db5ae4ae41a63bf6f7594d729965e88)
+        ;
+
+        
+    
+    
+            var marker_3d1a9ffd4fe9fe22ec2d9641dd3ed6cd = L.marker(
+                [10.50331, 107.17519],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_1044426139decdbba04628bf9dc7b7f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3d1a9ffd4fe9fe22ec2d9641dd3ed6cd.setIcon(icon_1044426139decdbba04628bf9dc7b7f4);
+        
+    
+        var popup_828df00c43303168bb01033830ef3641 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4505411a6f641753d553ffa513d16182 = $(`<div id="html_4505411a6f641753d553ffa513d16182" style="width: 100.0%; height: 100.0%;">VUBR11 - Phước Nguyên, Bà Rịa</div>`)[0];
+            popup_828df00c43303168bb01033830ef3641.setContent(html_4505411a6f641753d553ffa513d16182);
+        
+
+        marker_3d1a9ffd4fe9fe22ec2d9641dd3ed6cd.bindPopup(popup_828df00c43303168bb01033830ef3641)
+        ;
+
+        
+    
+    
+            var marker_8ed22074a37258ce37f5512e4432b704 = L.marker(
+                [10.49886, 107.16125],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_e5c7b58fe3e32f067e73650a0624e0ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8ed22074a37258ce37f5512e4432b704.setIcon(icon_e5c7b58fe3e32f067e73650a0624e0ba);
+        
+    
+        var popup_4a195b81d87e30ce36986807efea1fe1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23f307eac7320d1e7bec07c74fd65167 = $(`<div id="html_23f307eac7320d1e7bec07c74fd65167" style="width: 100.0%; height: 100.0%;">VUBR20 - Long Hương, Bà Rịa</div>`)[0];
+            popup_4a195b81d87e30ce36986807efea1fe1.setContent(html_23f307eac7320d1e7bec07c74fd65167);
+        
+
+        marker_8ed22074a37258ce37f5512e4432b704.bindPopup(popup_4a195b81d87e30ce36986807efea1fe1)
+        ;
+
+        
+    
+    
+            var marker_06fed9426a558c4184cc00b448b63b00 = L.marker(
+                [10.49261, 107.17109],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_33d6b60196d71ca19713b38814ca7450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06fed9426a558c4184cc00b448b63b00.setIcon(icon_33d6b60196d71ca19713b38814ca7450);
+        
+    
+        var popup_2ae3fdb43d058657678c6c7819cb7448 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8262eccceb487db1f46037dfcfb45f47 = $(`<div id="html_8262eccceb487db1f46037dfcfb45f47" style="width: 100.0%; height: 100.0%;">VUBR25 - Phước Trung, Bà Rịa</div>`)[0];
+            popup_2ae3fdb43d058657678c6c7819cb7448.setContent(html_8262eccceb487db1f46037dfcfb45f47);
+        
+
+        marker_06fed9426a558c4184cc00b448b63b00.bindPopup(popup_2ae3fdb43d058657678c6c7819cb7448)
+        ;
+
+        
+    
+    
+            var marker_340be9b8cd4fb56bb3c9725db0a95ec4 = L.marker(
+                [10.491, 107.17759],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_dbc4cc39ac2a6e8dea411c3322fe8f95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_340be9b8cd4fb56bb3c9725db0a95ec4.setIcon(icon_dbc4cc39ac2a6e8dea411c3322fe8f95);
+        
+    
+        var popup_1397f6d67685963064c473f50e0a5975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a574606547f49979c048ea1abe2e3ca8 = $(`<div id="html_a574606547f49979c048ea1abe2e3ca8" style="width: 100.0%; height: 100.0%;">VUBR28 - Phước Trung, Bà Rịa</div>`)[0];
+            popup_1397f6d67685963064c473f50e0a5975.setContent(html_a574606547f49979c048ea1abe2e3ca8);
+        
+
+        marker_340be9b8cd4fb56bb3c9725db0a95ec4.bindPopup(popup_1397f6d67685963064c473f50e0a5975)
+        ;
+
+        
+    
+    
+            var marker_2560d4840ce05bd5732a5e5251ebd1e1 = L.marker(
+                [10.49684, 107.17293],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_b33ab39647bf162f047e01c60762ad0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2560d4840ce05bd5732a5e5251ebd1e1.setIcon(icon_b33ab39647bf162f047e01c60762ad0f);
+        
+    
+        var popup_891eec0df0b544e20182dd1783629e40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf7b00aba3136c298ba67b59dfe9d6f5 = $(`<div id="html_cf7b00aba3136c298ba67b59dfe9d6f5" style="width: 100.0%; height: 100.0%;">VUBR36 - Phước Hiệp, Bà Rịa</div>`)[0];
+            popup_891eec0df0b544e20182dd1783629e40.setContent(html_cf7b00aba3136c298ba67b59dfe9d6f5);
+        
+
+        marker_2560d4840ce05bd5732a5e5251ebd1e1.bindPopup(popup_891eec0df0b544e20182dd1783629e40)
+        ;
+
+        
+    
+    
+            var marker_ead36f645529d79a885f9651c8939d4b = L.marker(
+                [10.48822, 107.18324],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_4e8857187b069bf76b8070ced442feaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ead36f645529d79a885f9651c8939d4b.setIcon(icon_4e8857187b069bf76b8070ced442feaa);
+        
+    
+        var popup_0b3887fbc0214f438c6bf6a54e3ecd99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5ea2f415416b9de4b9e5e1607478c8e = $(`<div id="html_d5ea2f415416b9de4b9e5e1607478c8e" style="width: 100.0%; height: 100.0%;">VUBR42 - Phước Trung, Bà Rịa</div>`)[0];
+            popup_0b3887fbc0214f438c6bf6a54e3ecd99.setContent(html_d5ea2f415416b9de4b9e5e1607478c8e);
+        
+
+        marker_ead36f645529d79a885f9651c8939d4b.bindPopup(popup_0b3887fbc0214f438c6bf6a54e3ecd99)
+        ;
+
+        
+    
+    
+            var marker_e868768edccd7d9796794d0e7e0aed83 = L.marker(
+                [8.68396, 106.6075],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_905ca0696ba0361a01615da65def60bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e868768edccd7d9796794d0e7e0aed83.setIcon(icon_905ca0696ba0361a01615da65def60bb);
+        
+    
+        var popup_5ae4b77fc2ba26c3c332c211585e512f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7ee49fb6d10b3b3f354669cf0634bea = $(`<div id="html_c7ee49fb6d10b3b3f354669cf0634bea" style="width: 100.0%; height: 100.0%;">VUCO00 - Côn Đảo, Côn Đảo</div>`)[0];
+            popup_5ae4b77fc2ba26c3c332c211585e512f.setContent(html_c7ee49fb6d10b3b3f354669cf0634bea);
+        
+
+        marker_e868768edccd7d9796794d0e7e0aed83.bindPopup(popup_5ae4b77fc2ba26c3c332c211585e512f)
+        ;
+
+        
+    
+    
+            var marker_0b930c028e592f33806cb09764bb3c8f = L.marker(
+                [8.6881, 106.609],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_c00fbe74d640c1e28ab56429e6f2feba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b930c028e592f33806cb09764bb3c8f.setIcon(icon_c00fbe74d640c1e28ab56429e6f2feba);
+        
+    
+        var popup_e172b4bcff8bc4ec6935de1211531ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d017ca5152e132948100cf1ddd6f8ec3 = $(`<div id="html_d017ca5152e132948100cf1ddd6f8ec3" style="width: 100.0%; height: 100.0%;">VUCO10 - Côn Đảo, Côn Đảo</div>`)[0];
+            popup_e172b4bcff8bc4ec6935de1211531ec0.setContent(html_d017ca5152e132948100cf1ddd6f8ec3);
+        
+
+        marker_0b930c028e592f33806cb09764bb3c8f.bindPopup(popup_e172b4bcff8bc4ec6935de1211531ec0)
+        ;
+
+        
+    
+    
+            var marker_38e24a3cb288f54c7b1cc57186cbb680 = L.marker(
+                [10.64892, 107.24172],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_23524a0123f94c5bfc7c37bce630d8e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_38e24a3cb288f54c7b1cc57186cbb680.setIcon(icon_23524a0123f94c5bfc7c37bce630d8e9);
+        
+    
+        var popup_4955e17384f462a3d34388c0602a3508 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_903275e96a77f9051301e42eac7603a0 = $(`<div id="html_903275e96a77f9051301e42eac7603a0" style="width: 100.0%; height: 100.0%;">VUCD14 - Ngãi Giao, Châu Đức</div>`)[0];
+            popup_4955e17384f462a3d34388c0602a3508.setContent(html_903275e96a77f9051301e42eac7603a0);
+        
+
+        marker_38e24a3cb288f54c7b1cc57186cbb680.bindPopup(popup_4955e17384f462a3d34388c0602a3508)
+        ;
+
+        
+    
+    
+            var marker_8e204ab9a78794186e102c7e2d42cdf0 = L.marker(
+                [10.58588, 107.20946],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_2cc2bd65dbbcb6fd2a2906f3c96203ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8e204ab9a78794186e102c7e2d42cdf0.setIcon(icon_2cc2bd65dbbcb6fd2a2906f3c96203ac);
+        
+    
+        var popup_b6a2aaf90eb6f0a7ee5588427e44aaa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ad0a5c5d162fce6b103f82cb5750d1 = $(`<div id="html_f2ad0a5c5d162fce6b103f82cb5750d1" style="width: 100.0%; height: 100.0%;">VUCD67 - Suối Nghệ, Châu Đức</div>`)[0];
+            popup_b6a2aaf90eb6f0a7ee5588427e44aaa9.setContent(html_f2ad0a5c5d162fce6b103f82cb5750d1);
+        
+
+        marker_8e204ab9a78794186e102c7e2d42cdf0.bindPopup(popup_b6a2aaf90eb6f0a7ee5588427e44aaa9)
+        ;
+
+        
+    
+    
+            var marker_17946581ff35ee376e6f46d8599acc21 = L.marker(
+                [10.48806, 107.26937],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_6c525b4ccecaecc3ed03cfcede18e40d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_17946581ff35ee376e6f46d8599acc21.setIcon(icon_6c525b4ccecaecc3ed03cfcede18e40d);
+        
+    
+        var popup_2a4e08460dfae625e600c9a2ec89b085 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ab464a7143e5f3b84096d1f855963c3 = $(`<div id="html_4ab464a7143e5f3b84096d1f855963c3" style="width: 100.0%; height: 100.0%;">VUDD24 - Đất Đỏ, Đất Đỏ</div>`)[0];
+            popup_2a4e08460dfae625e600c9a2ec89b085.setContent(html_4ab464a7143e5f3b84096d1f855963c3);
+        
+
+        marker_17946581ff35ee376e6f46d8599acc21.bindPopup(popup_2a4e08460dfae625e600c9a2ec89b085)
+        ;
+
+        
+    
+    
+            var marker_11edd2999a76f4e235c4d47b182eeb64 = L.marker(
+                [10.422871, 107.287842],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_66a6dc3e3556122099155a60152f4198 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_11edd2999a76f4e235c4d47b182eeb64.setIcon(icon_66a6dc3e3556122099155a60152f4198);
+        
+    
+        var popup_d4d1a2380a48fe0da386a505543a6d31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f30e08388e8ae6c20f0be4631ba02fd = $(`<div id="html_4f30e08388e8ae6c20f0be4631ba02fd" style="width: 100.0%; height: 100.0%;">VUDD36 - Phước Hải, Đất Đỏ</div>`)[0];
+            popup_d4d1a2380a48fe0da386a505543a6d31.setContent(html_4f30e08388e8ae6c20f0be4631ba02fd);
+        
+
+        marker_11edd2999a76f4e235c4d47b182eeb64.bindPopup(popup_d4d1a2380a48fe0da386a505543a6d31)
+        ;
+
+        
+    
+    
+            var marker_7941a25fe679a4be417ae10a572cd41e = L.marker(
+                [10.48467, 107.21471],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_06fcb8de2f6c5bf73347172271e419fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7941a25fe679a4be417ae10a572cd41e.setIcon(icon_06fcb8de2f6c5bf73347172271e419fd);
+        
+    
+        var popup_815fff346ff058c57195456061566e70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1833e645a82e1f0441cb49d41e284658 = $(`<div id="html_1833e645a82e1f0441cb49d41e284658" style="width: 100.0%; height: 100.0%;">VULD01 - Long Điền, Long Điền</div>`)[0];
+            popup_815fff346ff058c57195456061566e70.setContent(html_1833e645a82e1f0441cb49d41e284658);
+        
+
+        marker_7941a25fe679a4be417ae10a572cd41e.bindPopup(popup_815fff346ff058c57195456061566e70)
+        ;
+
+        
+    
+    
+            var marker_b34146397587b3d607cd53799673a605 = L.marker(
+                [10.39444, 107.23082],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_19fd159747b5bdece31c40f398442b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b34146397587b3d607cd53799673a605.setIcon(icon_19fd159747b5bdece31c40f398442b3d);
+        
+    
+        var popup_b9325cae551f84897c068774f0f54947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d67c831152c613c46d9c9f0958378473 = $(`<div id="html_d67c831152c613c46d9c9f0958378473" style="width: 100.0%; height: 100.0%;">VULD02 - Long Hải, Long Điền</div>`)[0];
+            popup_b9325cae551f84897c068774f0f54947.setContent(html_d67c831152c613c46d9c9f0958378473);
+        
+
+        marker_b34146397587b3d607cd53799673a605.bindPopup(popup_b9325cae551f84897c068774f0f54947)
+        ;
+
+        
+    
+    
+            var marker_02adf1cb23a1885da83cc7c3ed8815f6 = L.marker(
+                [10.40449, 107.18704],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_50d26ec0bcdad22d134cba71b0e68932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_02adf1cb23a1885da83cc7c3ed8815f6.setIcon(icon_50d26ec0bcdad22d134cba71b0e68932);
+        
+    
+        var popup_8dea187f2f40e68c349d614d2333fe3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7def5b2d8735a386a1e7a401e0272ab2 = $(`<div id="html_7def5b2d8735a386a1e7a401e0272ab2" style="width: 100.0%; height: 100.0%;">VULD08 - Phước Tỉnh, Long Điền</div>`)[0];
+            popup_8dea187f2f40e68c349d614d2333fe3e.setContent(html_7def5b2d8735a386a1e7a401e0272ab2);
+        
+
+        marker_02adf1cb23a1885da83cc7c3ed8815f6.bindPopup(popup_8dea187f2f40e68c349d614d2333fe3e)
+        ;
+
+        
+    
+    
+            var marker_a6770df66bb2e35f4863266613b7103b = L.marker(
+                [10.62681, 107.05318],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_c2dd4647c7cc1df2189d296d67deb4e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a6770df66bb2e35f4863266613b7103b.setIcon(icon_c2dd4647c7cc1df2189d296d67deb4e1);
+        
+    
+        var popup_90b37a2a9513a14474c2376a069604e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_632f702fd70c06792c8e903f867fe974 = $(`<div id="html_632f702fd70c06792c8e903f867fe974" style="width: 100.0%; height: 100.0%;">VUTT02 - Mỹ Xuân, Phú Mỹ</div>`)[0];
+            popup_90b37a2a9513a14474c2376a069604e2.setContent(html_632f702fd70c06792c8e903f867fe974);
+        
+
+        marker_a6770df66bb2e35f4863266613b7103b.bindPopup(popup_90b37a2a9513a14474c2376a069604e2)
+        ;
+
+        
+    
+    
+            var marker_95ff6323aef18ce0eb9a6d6c60fb293f = L.marker(
+                [10.64878, 107.04253],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_81954c1424d02a7033cf04822482562d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_95ff6323aef18ce0eb9a6d6c60fb293f.setIcon(icon_81954c1424d02a7033cf04822482562d);
+        
+    
+        var popup_69e9ff0e99a90156e462ae6673677fa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_058acfc855087f0c0b25979d836a67ad = $(`<div id="html_058acfc855087f0c0b25979d836a67ad" style="width: 100.0%; height: 100.0%;">VUTT03 - Mỹ Xuân, Phú Mỹ</div>`)[0];
+            popup_69e9ff0e99a90156e462ae6673677fa2.setContent(html_058acfc855087f0c0b25979d836a67ad);
+        
+
+        marker_95ff6323aef18ce0eb9a6d6c60fb293f.bindPopup(popup_69e9ff0e99a90156e462ae6673677fa2)
+        ;
+
+        
+    
+    
+            var marker_b25cd643764f35cc6c31f3aeef0d96e4 = L.marker(
+                [10.605138, 107.054221],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_c8b52d6ff56fabddacdd99a1572777b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b25cd643764f35cc6c31f3aeef0d96e4.setIcon(icon_c8b52d6ff56fabddacdd99a1572777b3);
+        
+    
+        var popup_cda592deb774210165e42a037ce00231 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_529bd883a57153a28b20f94dc4d97d9b = $(`<div id="html_529bd883a57153a28b20f94dc4d97d9b" style="width: 100.0%; height: 100.0%;">VUTT05 - Phú Mỹ, Phú Mỹ</div>`)[0];
+            popup_cda592deb774210165e42a037ce00231.setContent(html_529bd883a57153a28b20f94dc4d97d9b);
+        
+
+        marker_b25cd643764f35cc6c31f3aeef0d96e4.bindPopup(popup_cda592deb774210165e42a037ce00231)
+        ;
+
+        
+    
+    
+            var marker_fad9126f6207d9f28703fc24eaa07661 = L.marker(
+                [10.585043, 107.052532],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_2e3ad0b2f159ca08ed4debd62916dd73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fad9126f6207d9f28703fc24eaa07661.setIcon(icon_2e3ad0b2f159ca08ed4debd62916dd73);
+        
+    
+        var popup_dcdf8c2570bf208b58ec93ead723bbb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8047046ac90b81c8d8380e8907e19db = $(`<div id="html_b8047046ac90b81c8d8380e8907e19db" style="width: 100.0%; height: 100.0%;">VUTT06 - Phú Mỹ, Phú Mỹ</div>`)[0];
+            popup_dcdf8c2570bf208b58ec93ead723bbb2.setContent(html_b8047046ac90b81c8d8380e8907e19db);
+        
+
+        marker_fad9126f6207d9f28703fc24eaa07661.bindPopup(popup_dcdf8c2570bf208b58ec93ead723bbb2)
+        ;
+
+        
+    
+    
+            var marker_487138291f004e95636bbf208084102f = L.marker(
+                [10.56351, 107.05766],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_fbe474c1953dca6bf21f774e4074539a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_487138291f004e95636bbf208084102f.setIcon(icon_fbe474c1953dca6bf21f774e4074539a);
+        
+    
+        var popup_56f44431261a7c015d4e864612b61533 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddc256c9b9a736d7dab586bc8af9180f = $(`<div id="html_ddc256c9b9a736d7dab586bc8af9180f" style="width: 100.0%; height: 100.0%;">VUTT08 - Tân Phước, Phú Mỹ</div>`)[0];
+            popup_56f44431261a7c015d4e864612b61533.setContent(html_ddc256c9b9a736d7dab586bc8af9180f);
+        
+
+        marker_487138291f004e95636bbf208084102f.bindPopup(popup_56f44431261a7c015d4e864612b61533)
+        ;
+
+        
+    
+    
+            var marker_4994e19b9ef9012fc9099c11575f932b = L.marker(
+                [10.6365, 107.04792],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_4d0ed276dad3046e496b915307ba6a54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4994e19b9ef9012fc9099c11575f932b.setIcon(icon_4d0ed276dad3046e496b915307ba6a54);
+        
+    
+        var popup_b7a01d506560fdab3cf81665e1bb80ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee97d530a2ae1e02b1a4bc98ccb2e01 = $(`<div id="html_9ee97d530a2ae1e02b1a4bc98ccb2e01" style="width: 100.0%; height: 100.0%;">VUTT13 - Mỹ Xuân, Phú Mỹ</div>`)[0];
+            popup_b7a01d506560fdab3cf81665e1bb80ff.setContent(html_9ee97d530a2ae1e02b1a4bc98ccb2e01);
+        
+
+        marker_4994e19b9ef9012fc9099c11575f932b.bindPopup(popup_b7a01d506560fdab3cf81665e1bb80ff)
+        ;
+
+        
+    
+    
+            var marker_6f6869abd61cfd784c076ce1e91f5c1e = L.marker(
+                [10.57333, 107.0578],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_7bb9352559ad27c0a8d52a9ea43e0b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f6869abd61cfd784c076ce1e91f5c1e.setIcon(icon_7bb9352559ad27c0a8d52a9ea43e0b04);
+        
+    
+        var popup_32968c7b378a68d08924751ce59966df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adeffbb408ddbf321c5e2a7b1f6ddf89 = $(`<div id="html_adeffbb408ddbf321c5e2a7b1f6ddf89" style="width: 100.0%; height: 100.0%;">VUTT19 - Tân Phước, Phú Mỹ</div>`)[0];
+            popup_32968c7b378a68d08924751ce59966df.setContent(html_adeffbb408ddbf321c5e2a7b1f6ddf89);
+        
+
+        marker_6f6869abd61cfd784c076ce1e91f5c1e.bindPopup(popup_32968c7b378a68d08924751ce59966df)
+        ;
+
+        
+    
+    
+            var marker_5b86b53a4daf56693942b04f3ae1c09b = L.marker(
+                [10.61508, 107.05598],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_2e157a5a1864ec38e4ea744707a84687 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5b86b53a4daf56693942b04f3ae1c09b.setIcon(icon_2e157a5a1864ec38e4ea744707a84687);
+        
+    
+        var popup_923ddb744a12b7bfde08a962fdfd54ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a8c5444a0e10cba09710d6b7fe2f373 = $(`<div id="html_3a8c5444a0e10cba09710d6b7fe2f373" style="width: 100.0%; height: 100.0%;">VUTT43 - Mỹ Xuân, Phú Mỹ</div>`)[0];
+            popup_923ddb744a12b7bfde08a962fdfd54ad.setContent(html_3a8c5444a0e10cba09710d6b7fe2f373);
+        
+
+        marker_5b86b53a4daf56693942b04f3ae1c09b.bindPopup(popup_923ddb744a12b7bfde08a962fdfd54ad)
+        ;
+
+        
+    
+    
+            var marker_2132cde07816963481c76d10d70dad20 = L.marker(
+                [10.59728, 107.055],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_54d25f18663f3963c7475462fcf901af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2132cde07816963481c76d10d70dad20.setIcon(icon_54d25f18663f3963c7475462fcf901af);
+        
+    
+        var popup_e04f8e45509b0ff76c21076ee27de35d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1306d5ab361f3c4c2d5064f76434338c = $(`<div id="html_1306d5ab361f3c4c2d5064f76434338c" style="width: 100.0%; height: 100.0%;">VUTT72 - Phú Mỹ, Phú Mỹ</div>`)[0];
+            popup_e04f8e45509b0ff76c21076ee27de35d.setContent(html_1306d5ab361f3c4c2d5064f76434338c);
+        
+
+        marker_2132cde07816963481c76d10d70dad20.bindPopup(popup_e04f8e45509b0ff76c21076ee27de35d)
+        ;
+
+        
+    
+    
+            var marker_1799f98430f6c2ac4097ac10c35c1970 = L.marker(
+                [10.603168, 107.048238],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_856c06bce39dc2f2973eb84b7f14c24c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1799f98430f6c2ac4097ac10c35c1970.setIcon(icon_856c06bce39dc2f2973eb84b7f14c24c);
+        
+    
+        var popup_e38906d5fae43e2dc1b4a61fd72f0ecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8504cc644872c7fb9a1e77f22f02846 = $(`<div id="html_c8504cc644872c7fb9a1e77f22f02846" style="width: 100.0%; height: 100.0%;">VUTT92 - Phú Mỹ, Phú Mỹ</div>`)[0];
+            popup_e38906d5fae43e2dc1b4a61fd72f0ecc.setContent(html_c8504cc644872c7fb9a1e77f22f02846);
+        
+
+        marker_1799f98430f6c2ac4097ac10c35c1970.bindPopup(popup_e38906d5fae43e2dc1b4a61fd72f0ecc)
+        ;
+
+        
+    
+    
+            var marker_9914fbd6ce9371fc88ecfe29d01328ad = L.marker(
+                [10.591, 107.0566],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_3278ffe680722e1e5654b026cd15260d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9914fbd6ce9371fc88ecfe29d01328ad.setIcon(icon_3278ffe680722e1e5654b026cd15260d);
+        
+    
+        var popup_ae8e9c175a10e0a9b221cdccfd7f00f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9a858303d6b6d80aa824966f6b42d9e = $(`<div id="html_f9a858303d6b6d80aa824966f6b42d9e" style="width: 100.0%; height: 100.0%;">VUTTA8 - Phú Mỹ, Phú Mỹ</div>`)[0];
+            popup_ae8e9c175a10e0a9b221cdccfd7f00f7.setContent(html_f9a858303d6b6d80aa824966f6b42d9e);
+        
+
+        marker_9914fbd6ce9371fc88ecfe29d01328ad.bindPopup(popup_ae8e9c175a10e0a9b221cdccfd7f00f7)
+        ;
+
+        
+    
+    
+            var marker_e363250dc67927041df7f1669e3139bc = L.marker(
+                [10.4033, 107.12859],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_2986da3ce1714d51d88b70011bb8e03b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e363250dc67927041df7f1669e3139bc.setIcon(icon_2986da3ce1714d51d88b70011bb8e03b);
+        
+    
+        var popup_0050fb2fc79dcf6c42b14a8960e9ba49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93591989c10e9c8034bb448f2b95c2f1 = $(`<div id="html_93591989c10e9c8034bb448f2b95c2f1" style="width: 100.0%; height: 100.0%;">VUVT00 - P.11, Vũng Tàu</div>`)[0];
+            popup_0050fb2fc79dcf6c42b14a8960e9ba49.setContent(html_93591989c10e9c8034bb448f2b95c2f1);
+        
+
+        marker_e363250dc67927041df7f1669e3139bc.bindPopup(popup_0050fb2fc79dcf6c42b14a8960e9ba49)
+        ;
+
+        
+    
+    
+            var marker_dcda624f60155bce2a6a3cbfac75893c = L.marker(
+                [10.3501, 107.09251],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_6bc49388f2170f5c70b3b0157e00097b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dcda624f60155bce2a6a3cbfac75893c.setIcon(icon_6bc49388f2170f5c70b3b0157e00097b);
+        
+    
+        var popup_46868d80224370803db341e07162deee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0708546b9a08a4c7fdf2e349b64f4b68 = $(`<div id="html_0708546b9a08a4c7fdf2e349b64f4b68" style="width: 100.0%; height: 100.0%;">VUVT0C - P.8, Vũng Tàu</div>`)[0];
+            popup_46868d80224370803db341e07162deee.setContent(html_0708546b9a08a4c7fdf2e349b64f4b68);
+        
+
+        marker_dcda624f60155bce2a6a3cbfac75893c.bindPopup(popup_46868d80224370803db341e07162deee)
+        ;
+
+        
+    
+    
+            var marker_438c07db1a5b4d3a0fb28694f834af20 = L.marker(
+                [10.341, 107.0739],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_95d0c3ae6e73dac314de1cc14fcba177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_438c07db1a5b4d3a0fb28694f834af20.setIcon(icon_95d0c3ae6e73dac314de1cc14fcba177);
+        
+    
+        var popup_2bfb3ccfafa9f440cdfe349a36770a86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97747d6c8c28eb650a27b1ed8002a1f9 = $(`<div id="html_97747d6c8c28eb650a27b1ed8002a1f9" style="width: 100.0%; height: 100.0%;">VUVT1A - P.2, Vũng Tàu</div>`)[0];
+            popup_2bfb3ccfafa9f440cdfe349a36770a86.setContent(html_97747d6c8c28eb650a27b1ed8002a1f9);
+        
+
+        marker_438c07db1a5b4d3a0fb28694f834af20.bindPopup(popup_2bfb3ccfafa9f440cdfe349a36770a86)
+        ;
+
+        
+    
+    
+            var marker_6ef2cbd16811f93dfb7889008ed9ccf0 = L.marker(
+                [10.3458, 107.075],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_d69401f76b1e81ed82df45854e25afca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6ef2cbd16811f93dfb7889008ed9ccf0.setIcon(icon_d69401f76b1e81ed82df45854e25afca);
+        
+    
+        var popup_98fedbb019eda15738e6803dc89cee4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b667ac465fb0d18774bd7cf4c0c6273 = $(`<div id="html_2b667ac465fb0d18774bd7cf4c0c6273" style="width: 100.0%; height: 100.0%;">VUVT1B - P.1, Vũng Tàu</div>`)[0];
+            popup_98fedbb019eda15738e6803dc89cee4f.setContent(html_2b667ac465fb0d18774bd7cf4c0c6273);
+        
+
+        marker_6ef2cbd16811f93dfb7889008ed9ccf0.bindPopup(popup_98fedbb019eda15738e6803dc89cee4f)
+        ;
+
+        
+    
+    
+            var marker_45a1aaa7f037645e679118104ec04221 = L.marker(
+                [10.342788, 107.0941],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_086cb07c3988787ecf6ef048d771552a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_45a1aaa7f037645e679118104ec04221.setIcon(icon_086cb07c3988787ecf6ef048d771552a);
+        
+    
+        var popup_4913b388d9c979144adb97309ec92bc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40d9b4bf707ce4b4c66695d9d7ba1abc = $(`<div id="html_40d9b4bf707ce4b4c66695d9d7ba1abc" style="width: 100.0%; height: 100.0%;">VUVT49 - Thắng Tam, Vũng Tàu</div>`)[0];
+            popup_4913b388d9c979144adb97309ec92bc4.setContent(html_40d9b4bf707ce4b4c66695d9d7ba1abc);
+        
+
+        marker_45a1aaa7f037645e679118104ec04221.bindPopup(popup_4913b388d9c979144adb97309ec92bc4)
+        ;
+
+        
+    
+    
+            var marker_c31d56a538d2c3ccd5e11d25547764b2 = L.marker(
+                [10.33651, 107.09043],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_0283d80812cb65accff4d46ebfe9b92e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c31d56a538d2c3ccd5e11d25547764b2.setIcon(icon_0283d80812cb65accff4d46ebfe9b92e);
+        
+    
+        var popup_5213f9ca69ec1afce78e425db6a25381 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_591cfcf47cf8918965e79875ebaf370d = $(`<div id="html_591cfcf47cf8918965e79875ebaf370d" style="width: 100.0%; height: 100.0%;">VUVT4C - 2, Vũng Tàu</div>`)[0];
+            popup_5213f9ca69ec1afce78e425db6a25381.setContent(html_591cfcf47cf8918965e79875ebaf370d);
+        
+
+        marker_c31d56a538d2c3ccd5e11d25547764b2.bindPopup(popup_5213f9ca69ec1afce78e425db6a25381)
+        ;
+
+        
+    
+    
+            var marker_8210efc45697df4b6369ee2cc87f0e14 = L.marker(
+                [10.376869, 107.113381],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_ef969ec64c85f5521e52072bc0189409 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8210efc45697df4b6369ee2cc87f0e14.setIcon(icon_ef969ec64c85f5521e52072bc0189409);
+        
+    
+        var popup_2e2175caf534ae3bbf7f03520e939ae9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ff12178b7dcb4b057bf00477bd55784 = $(`<div id="html_9ff12178b7dcb4b057bf00477bd55784" style="width: 100.0%; height: 100.0%;">VUVT53 - P.10, Vũng Tàu</div>`)[0];
+            popup_2e2175caf534ae3bbf7f03520e939ae9.setContent(html_9ff12178b7dcb4b057bf00477bd55784);
+        
+
+        marker_8210efc45697df4b6369ee2cc87f0e14.bindPopup(popup_2e2175caf534ae3bbf7f03520e939ae9)
+        ;
+
+        
+    
+    
+            var marker_e85b0db7d82ac6715fcb0f9e7d3b3c6e = L.marker(
+                [10.387249, 107.085031],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_af806dd8517e1bfd151c26498a2aeccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e85b0db7d82ac6715fcb0f9e7d3b3c6e.setIcon(icon_af806dd8517e1bfd151c26498a2aeccc);
+        
+    
+        var popup_b5216baf5baa1a9050adff21c9fdfbf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bb18eb6e66ae5a2863171525bdd4cfd = $(`<div id="html_7bb18eb6e66ae5a2863171525bdd4cfd" style="width: 100.0%; height: 100.0%;">VUVT63 - Thắng Nhất, Vũng Tàu</div>`)[0];
+            popup_b5216baf5baa1a9050adff21c9fdfbf9.setContent(html_7bb18eb6e66ae5a2863171525bdd4cfd);
+        
+
+        marker_e85b0db7d82ac6715fcb0f9e7d3b3c6e.bindPopup(popup_b5216baf5baa1a9050adff21c9fdfbf9)
+        ;
+
+        
+    
+    
+            var marker_a230ba66fd0abce4b64707f6793f80a0 = L.marker(
+                [10.36226, 107.08777],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_744dbdcf6d1a328e24dfa3e257954f35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a230ba66fd0abce4b64707f6793f80a0.setIcon(icon_744dbdcf6d1a328e24dfa3e257954f35);
+        
+    
+        var popup_9c5d2c4293d79659bcb6413c4e54fc8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7799bc34d4bc0aa2661fff2b877314b2 = $(`<div id="html_7799bc34d4bc0aa2661fff2b877314b2" style="width: 100.0%; height: 100.0%;">VUVT73 - P.7, Vũng Tàu</div>`)[0];
+            popup_9c5d2c4293d79659bcb6413c4e54fc8c.setContent(html_7799bc34d4bc0aa2661fff2b877314b2);
+        
+
+        marker_a230ba66fd0abce4b64707f6793f80a0.bindPopup(popup_9c5d2c4293d79659bcb6413c4e54fc8c)
+        ;
+
+        
+    
+    
+            var marker_85c68ac1f8ba50151674449a0f645f99 = L.marker(
+                [10.35242, 107.08926],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_38a66c9d37c368f3df8d49c4fe21a03a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_85c68ac1f8ba50151674449a0f645f99.setIcon(icon_38a66c9d37c368f3df8d49c4fe21a03a);
+        
+    
+        var popup_9752c9f49456356a54d3509bc51e2ede = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1362932e8923bd4cd299cb884127f66d = $(`<div id="html_1362932e8923bd4cd299cb884127f66d" style="width: 100.0%; height: 100.0%;">VUVT7C - Thắng Tam, Vũng Tàu</div>`)[0];
+            popup_9752c9f49456356a54d3509bc51e2ede.setContent(html_1362932e8923bd4cd299cb884127f66d);
+        
+
+        marker_85c68ac1f8ba50151674449a0f645f99.bindPopup(popup_9752c9f49456356a54d3509bc51e2ede)
+        ;
+
+        
+    
+    
+            var marker_cac081f06a57e9d9397d4c37fd1373d1 = L.marker(
+                [10.40243, 107.11574],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_50aa0b2038d19dd5f0c0537829c59407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cac081f06a57e9d9397d4c37fd1373d1.setIcon(icon_50aa0b2038d19dd5f0c0537829c59407);
+        
+    
+        var popup_0dfe119d2d5edee1d11585c3d113b7e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311ec6fa9baa63e1c6cd33cac37c953a = $(`<div id="html_311ec6fa9baa63e1c6cd33cac37c953a" style="width: 100.0%; height: 100.0%;">VUVT87 - Rạch Dừa, Vũng Tàu</div>`)[0];
+            popup_0dfe119d2d5edee1d11585c3d113b7e4.setContent(html_311ec6fa9baa63e1c6cd33cac37c953a);
+        
+
+        marker_cac081f06a57e9d9397d4c37fd1373d1.bindPopup(popup_0dfe119d2d5edee1d11585c3d113b7e4)
+        ;
+
+        
+    
+    
+            var marker_7b9dfe69515052be340e85c93e7278f6 = L.marker(
+                [10.33894, 107.07224],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_6119325e74d1b44435a48acdc384beb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7b9dfe69515052be340e85c93e7278f6.setIcon(icon_6119325e74d1b44435a48acdc384beb1);
+        
+    
+        var popup_965ee4dc9e9d29b96b8b1eb5e3c34fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e207393a43bd212ac5a63941d0571efd = $(`<div id="html_e207393a43bd212ac5a63941d0571efd" style="width: 100.0%; height: 100.0%;">VUVT89 - P.2, Vũng Tàu</div>`)[0];
+            popup_965ee4dc9e9d29b96b8b1eb5e3c34fa8.setContent(html_e207393a43bd212ac5a63941d0571efd);
+        
+
+        marker_7b9dfe69515052be340e85c93e7278f6.bindPopup(popup_965ee4dc9e9d29b96b8b1eb5e3c34fa8)
+        ;
+
+        
+    
+    
+            var marker_2b8fa0d933128cebfbfebc908674a14f = L.marker(
+                [10.349, 107.098],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_3e783b7b46fc4a1747e1fbee7fc859c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2b8fa0d933128cebfbfebc908674a14f.setIcon(icon_3e783b7b46fc4a1747e1fbee7fc859c5);
+        
+    
+        var popup_d023291aabc97baa6f41309a22f736c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b31f469da0310f1324f81516c76ea564 = $(`<div id="html_b31f469da0310f1324f81516c76ea564" style="width: 100.0%; height: 100.0%;">VUVT9B - Thắng Tam, Vũng Tàu</div>`)[0];
+            popup_d023291aabc97baa6f41309a22f736c9.setContent(html_b31f469da0310f1324f81516c76ea564);
+        
+
+        marker_2b8fa0d933128cebfbfebc908674a14f.bindPopup(popup_d023291aabc97baa6f41309a22f736c9)
+        ;
+
+        
+    
+    
+            var marker_2d32c51b04cfcae33aacb3c0408c116a = L.marker(
+                [10.348624, 107.072581],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_2888254eaa57db979e8bedc2400f16e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2d32c51b04cfcae33aacb3c0408c116a.setIcon(icon_2888254eaa57db979e8bedc2400f16e2);
+        
+    
+        var popup_eb09ff322515d7591d59c511f9d968c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1e2fef22cf4d9b8b2090f078987b56 = $(`<div id="html_ee1e2fef22cf4d9b8b2090f078987b56" style="width: 100.0%; height: 100.0%;">VUVTB9 - 1, Vũng Tàu</div>`)[0];
+            popup_eb09ff322515d7591d59c511f9d968c2.setContent(html_ee1e2fef22cf4d9b8b2090f078987b56);
+        
+
+        marker_2d32c51b04cfcae33aacb3c0408c116a.bindPopup(popup_eb09ff322515d7591d59c511f9d968c2)
+        ;
+
+        
+    
+    
+            var marker_df3d859a6296baf8c3aa09f7f30aaeab = L.marker(
+                [10.330549, 107.087187],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_1cb03f127191046d69af1fc90bded697 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_df3d859a6296baf8c3aa09f7f30aaeab.setIcon(icon_1cb03f127191046d69af1fc90bded697);
+        
+    
+        var popup_4eb15fe077424e770dbe52c0c729887a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ec0aa9067c980963cf0745a8600f495 = $(`<div id="html_6ec0aa9067c980963cf0745a8600f495" style="width: 100.0%; height: 100.0%;">VUVTC2 - 2, Vũng Tàu</div>`)[0];
+            popup_4eb15fe077424e770dbe52c0c729887a.setContent(html_6ec0aa9067c980963cf0745a8600f495);
+        
+
+        marker_df3d859a6296baf8c3aa09f7f30aaeab.bindPopup(popup_4eb15fe077424e770dbe52c0c729887a)
+        ;
+
+        
+    
+    
+            var marker_2515a80ba40554814f56ccaa325cb9cd = L.marker(
+                [10.3342, 107.0897],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_66846c786e864c3ba4e636605361e2a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2515a80ba40554814f56ccaa325cb9cd.setIcon(icon_66846c786e864c3ba4e636605361e2a8);
+        
+    
+        var popup_0814344d0933bbcde110623226c200c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24af3949cf43a7366d97b0e312206e2f = $(`<div id="html_24af3949cf43a7366d97b0e312206e2f" style="width: 100.0%; height: 100.0%;">VUVTR2 - 2, Vũng Tàu</div>`)[0];
+            popup_0814344d0933bbcde110623226c200c4.setContent(html_24af3949cf43a7366d97b0e312206e2f);
+        
+
+        marker_2515a80ba40554814f56ccaa325cb9cd.bindPopup(popup_0814344d0933bbcde110623226c200c4)
+        ;
+
+        
+    
+    
+            var marker_f1a8a91b7f3c4a6828e0f9c06562f71e = L.marker(
+                [10.472836, 107.43519],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_f5c8942a0563d336962a34158cc08b91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1a8a91b7f3c4a6828e0f9c06562f71e.setIcon(icon_f5c8942a0563d336962a34158cc08b91);
+        
+    
+        var popup_6d1e315cb1834f651c3df1672f9b8916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85af6835994a600aa981a7379ad260f4 = $(`<div id="html_85af6835994a600aa981a7379ad260f4" style="width: 100.0%; height: 100.0%;">VUXM05 - Phước Thuận, Xuyên Mộc</div>`)[0];
+            popup_6d1e315cb1834f651c3df1672f9b8916.setContent(html_85af6835994a600aa981a7379ad260f4);
+        
+
+        marker_f1a8a91b7f3c4a6828e0f9c06562f71e.bindPopup(popup_6d1e315cb1834f651c3df1672f9b8916)
+        ;
+
+        
+    
+    
+            var marker_b567a825b80ba83b8b66817cf6ed40a4 = L.marker(
+                [10.53619, 107.40317],
+                {}
+            ).addTo(marker_cluster_79ae3586bb0f490507fcc609640de543);
+        
+    
+            var icon_8e342154be1343d9e6ae3c43345a74d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "signal", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b567a825b80ba83b8b66817cf6ed40a4.setIcon(icon_8e342154be1343d9e6ae3c43345a74d3);
+        
+    
+        var popup_7a5ddb8a89055491a2a9349e26a359b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0af960b8cd57e49f2f72e57f01be929d = $(`<div id="html_0af960b8cd57e49f2f72e57f01be929d" style="width: 100.0%; height: 100.0%;">VUXM11 - Phước Bửu, Xuyên Mộc</div>`)[0];
+            popup_7a5ddb8a89055491a2a9349e26a359b3.setContent(html_0af960b8cd57e49f2f72e57f01be929d);
+        
+
+        marker_b567a825b80ba83b8b66817cf6ed40a4.bindPopup(popup_7a5ddb8a89055491a2a9349e26a359b3)
+        ;
+
+        
+    
+</script>
+</html>
